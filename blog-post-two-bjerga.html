@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>blog-post-two-bjerga</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="how-to-use-phpmyadmin">How to use phpMyAdmin</h1>
+<h3 id="creating-a-simple-database">Creating a Simple Database</h3>
+<p>Want to know how to make a database on phpMyAdmin? Just follow these simple steps!</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>To create a database on this tutorial, you will need to have phpMyAdmin installed and securely running. If you do not have phpMyAdmin installed, follow the instructions <a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-20-04">here.</a></p>
+<h3 id="step-one-logging-into-phpmyadmin-and-creating-a-database">Step One: Logging into phpMyAdmin and creating a Database</h3>
+<p>Enter the following into your browser of choice to access your phpMyAdmin:</p>
+<pre><code>https://your_domain_or_IP_address/phpmyadmin</code></pre>
+<p>The following prompt should pop on in your browser window:</p>
+<figure>
+<img src="phpmyadminlogin.jpg" alt="-phpmyadmin login prompt-" /><figcaption aria-hidden="true">-phpmyadmin login prompt-</figcaption>
+</figure>
+<p>Login to your account using the username and password you created when you installed phpMyAdmin. Once you are logged in, click the “Databases” tab found in the header. In the Database Name input, located below the header, type in the name of your database that you want to create. (Remember to use all lowercase when typing the name!) Next to the name entry is a collation tab, set that to “utf8mb4_general_ci” then click the “Create” button.</p>
+<p>Congrats! You have created a Database! Now let’s put some data in there!</p>
+<h3 id="step-2-creating-a-table-for-your-database">Step 2: Creating a Table for your Database</h3>
+<p>If you haven’t already, click on the “Databases” tab in your header. Then click on the Database you want to create a table for. <em>OR</em> you could just click the name of your Database in the directory found on the left side of your browser page. Once you have clicked on the Database you want to work with, look at the “Create Table” section. Enter the desired name of your table, and enter in the number of columns you would like. For the case of this tutorial, set the name of the table to be “dogs” and set the number of columns equal to 5. Once you have done this, click “Create Table.”</p>
+<p>After you click “Create Table,” 5 rows will appear, with a number of different boxes in each row. Each of these rows represents a column in your database. The purpose of what you are seeing on your screen is to set the properties of each column in your data table, by adding to the rows on your screen.</p>
+<p>For this tutorial, our 5 columns will be represented by the following: id, breed, size, age, and color. Let’s start with “id.”</p>
+<p>In the first row, for “Name” enter “id”, leave the “Type” as “INT” and set the length to 15. Check the box under “A_I.” Dialogue should appear, in there, set both of the fields to “PRIMARY.” This is the index for your table. Each item can be represented by a unique number (of up to 15 characters). The items will automatically increment themselves based on their unique id number. Now, onto the other rows.</p>
+<p>Add a name for each of the remaining rows. For this tutorial, add the names “breed”, “size”, “age”, and “color.” Since all of the categories (except “age”) will be represented by words, change the “Type” to “VARCHAR” and set the length to “100.” For the row “age”, set the type to “INT” of 3 digits. Do not change anything else in the rows. After all of the information has been added, click the “Save” button at the very bottom right of your screen.</p>
+<p>You should see all of the columns in the table! Now onto adding some data to your table!</p>
+<h3 id="step-3-adding-data">Step 3: Adding Data</h3>
+<p>Click the “SQL” tab found in the header of your browser. Under the text area, click “INSERT.” You should see some SQL code appear in the text input box. It should look like this (if you are following these instructions):</p>
+<pre><code>INSERT INTO `dogs`(`id`, `breed`, `size`, `age`, `color`) VALUES ([value-1],[value-2],[value-3],[value-4],[value-5])</code></pre>
+<p>To insert data, you need to edit the VALUES section of this code:</p>
+<pre><code>VALUES ([value-1],[value-2],[value-3],[value-4],[value-5])</code></pre>
+<p>Add values for each bracket of code. For example:</p>
+<pre><code>VALUES (&quot;1&quot;,&quot;Beagle&quot;,&quot;Small&quot;,&quot;3&quot;,&quot;Brown&quot;)</code></pre>
+<p>After you have added data, click the “Go” button at the bottom of the page. You should get a message that the data has been inserted. Add some more data using the code above, and when you are done, click on the database and look at the data you added.</p>
+<h3 id="step-4-creating-and-adding-a-database-user">Step 4: Creating and Adding a Database User</h3>
+<p>Now we need to add a user that is allowed to edit the database we made. We don’t want anyone else to use our root account. To do this, click the home button, then click on the “User Accounts” tab in the header.</p>
+<p>This tab lists all of the current users of databases. Below this list, click the “Add User Account” button. Enter a username and password for this user (remember to record it and make sure the password is strong). After that is done, click the “Go” button.</p>
+<p>On the Add Privileges screen, click the “Databases” button and select the database you just made. Click “Go.” Next, on the “Database Specific Privileges” screen, check “Select All” and click “Go.” If you got a message saying it worked, yay! You just created a user for your database!</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Congratulations! You have successfully created a database on phpMyAdmin!! PhpMyAdmin is a very useful tool for creating different databases. The databases that you create on this application can be displayed on browsers/websites. Once you have created the databases, you can use code on your server to interact with your interface. You can also use code to print your data out onto your browser!</p>
+</body>
+</html>
